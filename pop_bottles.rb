@@ -60,8 +60,8 @@ begin
   @first_caps = (input / 2) / 4
   @second_caps = caps(@first_caps)
   @final_bottles = bottles(@second_caps) + bottles(@first_bottles)
-  puts "You purchased #{@first_bottles} bottles. You get #{bottles(@first_bottles) - @first_bottles} bottles from bottle recycling
-  and #{bottles(@second_caps)} bottles from cap recycling
-  You will receive #{@final_bottles} bottles for your money!" 
+  puts "You purchased #{@first_bottles} bottles. You get #{bottles(@first_bottles) - @first_bottles} bottles from bottle recycling" \
+  " and #{bottles(@second_caps)} bottles from cap recycling." \
+  " You will receive #{@final_bottles} bottles for your money!" 
 end until response == "done"
 puts "Thank you for playing"
